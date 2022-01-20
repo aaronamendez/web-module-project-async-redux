@@ -9,6 +9,11 @@ const apiKey = 'OLxua1rUTwjx3jEX7OjGdQ1xCT7tkgT9CW8VgKDb';
 
 function App() {
 	const [state, setState] = useState({});
+	const [showInfo, setShowInfo] = useState(false);
+
+	const handleToggle = () => {
+		setShowInfo(!showInfo);
+	};
 
 	useEffect(() => {
 		console.log('useEffect Worked.');
@@ -25,7 +30,14 @@ function App() {
 	return (
 		<div className="App">
 			<Navbar />
-			<Container image={state.url} />
+			<Container
+				showInfo={showInfo}
+				image={state.url}
+				title={state.title}
+				date={state.date}
+				explanation={state.explanation}
+				handleToggle={handleToggle}
+			/>
 		</div>
 	);
 }

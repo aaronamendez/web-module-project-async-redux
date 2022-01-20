@@ -4,6 +4,7 @@ import './App.css';
 
 import Navbar from './components/Navbar';
 import Container from './components/Container';
+import Footer from './components/Footer';
 
 const apiKey = 'OLxua1rUTwjx3jEX7OjGdQ1xCT7tkgT9CW8VgKDb';
 
@@ -38,6 +39,7 @@ function App() {
 				explanation={state.explanation}
 				handleToggle={handleToggle}
 			/>
+			<Footer />
 		</div>
 	);
 }

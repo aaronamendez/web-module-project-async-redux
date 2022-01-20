@@ -16,11 +16,10 @@ const MoreInfo = ({ showInfo, title, date, explanation, handleToggle }) => {
 
 	return (
 		<div className="moreInfo">
-			<button className="btn-grad btn" onClick={handleToggle}>
-				More Info
+			<button className="btn" onClick={handleToggle}>
+				Toggle Info
 			</button>
 			{showInfo ? <Show /> : <Hide />}
-			<footer>This is the footer</footer>
 		</div>
 	);
 };

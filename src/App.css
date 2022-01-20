@@ -38,6 +38,11 @@ img {
 	width: 100%;
 }
 
+.moreInfo {
+	margin-top: 2em;
+	margin-bottom: 4em;
+}
+
 .btn-grad {
 	background-image: linear-gradient(
 		to right,
@@ -86,15 +91,19 @@ img {
 	text-decoration: none;
 }
 
-.moreInfo .btn {
-	margin-top: 5em;
+.btn {
+	background-color: white;
+	display: block;
 	margin: 0 auto;
 }
 
-.btn {
-	margin: 5em;
+.btn:hover {
+	background-color: black;
+	color: white;
 }
 
 footer {
+	text-align: center;
 	margin-top: 10em;
+	padding-bottom: 5em;
 }
